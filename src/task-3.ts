@@ -1,8 +1,8 @@
-const usernames = ["alice", "bob", "charlie"];
+const usernames: string[] = ["alice", "bob", "charlie"];
 
-const ratings = [4.5, 3.8, 5];
+const ratings: number[] = [4.5, 3.8, 5];
 
-const products = [
+const products: Product[]= [
   { id: 1, title: "Phone" },
   { id: 2, title: "Laptop" },
 ];
@@ -10,3 +10,9 @@ const products = [
 console.log(`Usernames: ${JSON.stringify(usernames)}`);
 console.log(`Ratings: ${JSON.stringify(ratings)}`);
 console.log(`Products: ${JSON.stringify(products)}`);
+
+
+interface Product {
+  id: number;
+  title: string;
+}
